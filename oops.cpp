@@ -7,6 +7,9 @@ private:
     double salary;
 
 public:
+    Teacher() {  // constructor , always declare public 
+        dept = "cs";
+    }
 
    // properties or attributes
     string name;
@@ -37,9 +40,10 @@ int main () {
     // assign value to t1 (for objects access its properties)
     t1.name = "Tejal";
     t1.subject = "OOP";
-    t1.dept = "cs";
+   
     t1.setSalary(2500);
-    cout<<t1.name<<endl;
+
+    cout<<t1.dept<<endl;
     cout<<t1.getSalary()<<endl;
 
     return 0;
